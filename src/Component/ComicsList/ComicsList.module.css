@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 900px;
+    background: #333;
+    border-top: 1px gray solid;
+    color: white;
+}
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cta button {
+    background: white;
+    width: 100px;
+    transition: 0.5s;
+}
+.cta button:hover {
+    background: red;
+    width: 120px;
+    color: white;
+}

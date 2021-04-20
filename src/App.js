@@ -1,70 +1,101 @@
-import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
-
-import Home from "./Home/Home.jsx";
-import Foo from "./Foo/Foo.jsx";
-import Bar from "./Bar/Bar.jsx";
-import Baz from "./Baz/Baz.jsx";
-import Error from "./Error/Error.jsx";
-
-// here is some external content. look at the /baz route below
-// to see how this content is passed down to the components via props
-const externalContent = {
-  id: "article-1",
-  title: "An Article",
-  author: "April Bingham",
-  text: "Some text in the article",
-};
+import React, { useState, useEffect } from "react";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
+import "./App.css";
+import Home from "./Component/Home/Home.jsx";
+import Error from "./Component/Error/Error.jsx";
+import Header from "./Component/Header/Header.jsx";
+import Footer from "./Component/Footer/Footer.jsx";
+import CharacterList from "./Component/CharacterList/CharacterList.jsx";
+import SignUp from "./Component/SignUp/SignUp.jsx";
+import Login from "./Component/Login/Login.jsx";
+import Success from "./Component/Success/Success";
+import MarvelFandomContext from "./Context/MarvelFandomContext.jsx";
+import DetailPage from "./Component/DetailPage/DetailPage";
+import ComicsDetail from "./Component/ComicsDetail/ComicsDetail.jsx";
+import Sidebar from "./Component/Sidebar/Sidebar";
+import ComicsList from "./Component/ComicsList/ComicsList";
+import Trailer from "./Component/Trailer/Trailer";
 
 function App() {
-  return (
-    <>
-      <header>
-        <nav>
-          <ul>
-            {/* these links should show you how to connect up a link to a specific route */}
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/foo">Foo</Link>
-            </li>
-            <li>
-              <Link to="/bar/hats/sombrero">Bar</Link>
-            </li>
-            <li>
-              <Link to="/baz">Baz</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/foo" exact component={Foo} />
-        {/* passing parameters via a route path */}
-        <Route
-          path="/bar/:categoryId/:productId"
-          exact
-          render={({ match }) => (
-            // getting the parameters from the url and passing
-            // down to the component as props
-            <Bar
-              categoryId={match.params.categoryId}
-              productId={match.params.productId}
-            />
-          )}
-        />
-        <Route
-          path="/baz"
-          exact
-          render={() => <Baz content={externalContent} />}
-        />
-        <Route component={Error} />
-      </Switch>
-    </>
-  );
+	const [username, setUsername] = useState(
+		localStorage.getItem("mf_username")
+			? localStorage.getItem("mf_username")
+			: ""
+	);
+	const [loggedIn, setLoggedIn] = useState(
+		localStorage.getItem("mf_username") ? true : false
+	);
+	const [sidebar, setSidebar] = useState(false);
+	const login = (username) => {
+		setUsername(username);
+		setLoggedIn(true);
+	};
+	const logout = () => {
+		setUsername("");
+		setLoggedIn(false);
+		localStorage.removeItem("mf_username");
+	};
+	useEffect(() => {
+		window.addEventListener("resize", () => {
+			if (window.innerWidth < 600) setSidebar(false);
+		});
+	}, []);
+
+	return (
+		<BrowserRouter>
+			<div className="app">
+				<MarvelFandomContext.Provider
+					value={{
+						login: login,
+						logout: logout,
+						username: username,
+						loggedIn: loggedIn,
+					}}
+				>
+					<Header
+						username={username}
+						loggedIn={loggedIn}
+						setSidebar={setSidebar}
+						sidebar={sidebar}
+					/>
+					<Sidebar
+						sidebar={sidebar}
+						setSidebar={setSidebar}
+						loggedIn={loggedIn}
+					/>
+					<Switch>
+						<Route path="/" exact component={Home} />
+						<Route
+							path="/characters"
+							exact
+							component={CharacterList}
+						/>
+						<Route
+							path="/characters/:id"
+							exact
+							component={DetailPage}
+						/>
+						<Route path="/signup" exact component={SignUp} />
+						<Route path="/login" exact component={Login} />
+						<Route path="/trailer" exact component={Trailer} />
+						<Route
+							path="/signup/success"
+							exact
+							component={Success}
+						/>
+						<Route path="/comics" exact component={ComicsList} />
+						<Route
+							path="/comics/:id"
+							exact
+							component={ComicsDetail}
+						/>
+						<Route component={Error} />
+					</Switch>
+					<Footer />
+				</MarvelFandomContext.Provider>
+			</div>
+		</BrowserRouter>
+	);
 }
 
 export default App;

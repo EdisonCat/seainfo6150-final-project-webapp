@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendered sidebar correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <a
+      class="link"
+      href="/"
+    >
+      Home
+    </a>
+    <a
+      class="link"
+      href="/signup"
+    >
+      Sign Up
+    </a>
+    <a
+      class="link"
+      href="/login"
+    >
+      Log In
+    </a>
+    <a
+      class="link"
+      href="/characters"
+    >
+      Characters
+    </a>
+    <a
+      class="link"
+      href="/comics"
+    >
+      Comics
+    </a>
+  </div>
+</div>
+`;

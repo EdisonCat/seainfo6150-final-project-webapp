@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendered CharacterCard correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div>
+      <h1 />
+    </div>
+    <img
+      alt="thumbnail"
+      class="thumbnail"
+      src=".jpg"
+    />
+    <button>
+      More Info
+    </button>
+  </div>
+</div>
+`;

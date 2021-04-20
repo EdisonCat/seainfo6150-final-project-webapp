@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+.container {
+	display: flex;
+	flex-direction: column;
+	min-height: 900px;
+	background-color: #333;
+	border-top: 1px solid grey;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: "Work Sans", sans-serif;
+}
+.container form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.inputtext {
+	margin: 5px;
+	border-radius: 30px;
+	width: 200px;
+	height: 40px;
+	outline: none;
+	padding: 5px;
+	font-size: 15px;
+	transition: 0.5s;
+	border: none;
+}
+.container select {
+	outline: none;
+	width: 100px;
+	border-radius: 50px;
+	margin: 5px;
+}
+.container label {
+	display: flex;
+	align-items: center;
+}
+.container button {
+	border: none;
+	margin: 5px;
+	width: 80px;
+	height: 30px;
+	border-radius: 30px;
+	transition: 0.5s;
+	cursor: pointer;
+	outline: none;
+	min-width: fit-content;
+	background: white;
+}
+.inputtext:hover,
+.inputtext:focus {
+	width: 220px;
+}
+.container button:hover {
+	width: 100px;
+	color: white;
+	background: red;
+	border: none;
+}
+a {
+	color: white;
+	outline: none;
+	text-decoration: underline;
+	text-decoration-color: #333;
+	transition: 0.5s;
+}
+a:hover {
+	text-decoration-color: red;
+}
+fieldset {
+	border: none;
+	display: flex;
+	flex-direction: column;
+}
+i {
+	text-decoration: underline;
+	text-decoration-color: #333;
+	transition: 0.5s;
+	cursor: pointer;
+}
+i:hover {
+	text-decoration-color: red;
+}

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendered ComicsDetail correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="thumbnail"
+    >
+      <img
+        alt="thumbnail"
+        src=""
+      />
+    </div>
+    <div
+      class="info"
+    >
+      <h1 />
+      <h4>
+        Description: 
+        
+      </h4>
+      <h4>
+        Characters: 
+      </h4>
+      <div
+        class="comics"
+      />
+    </div>
+  </div>
+</div>
+`;

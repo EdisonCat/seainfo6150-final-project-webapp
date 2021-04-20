@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendered Trailer correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <iframe
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen=""
+      frameborder="0"
+      height="454"
+      src="/"
+      title="YouTube video player"
+      width="807"
+    />
+  </div>
+</div>
+`;

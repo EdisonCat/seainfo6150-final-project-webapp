@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+.container {
+    max-width: 100%;
+    border: 1px solid white;
+    box-shadow: 2px 5px 5px white;
+    color: white;
+    display: flex;
+    border-radius: 50px;
+    padding: 22px;
+    margin: 20px;
+	font-family: 'Work Sans', sans-serif;
+}
+.thumbnail {
+    max-width: 100%;
+    height: auto;
+    margin-right: 50px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cta button {
+    background: white;
+    width: 100px;
+    transition: 0.5s;
+}
+.cta button:hover {
+    background: red;
+    color: white;
+    width: 120px;
+}
+@media screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+    .thumbnail {
+        margin-right: 0;
+    }
+}

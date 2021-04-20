@@ -1,0 +1,29 @@
+.container {
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid grey;
+}
+.container ul {
+    list-style: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+.container li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+	font-family: 'Work Sans', sans-serif;
+}
+.link {
+    text-decoration: underline;
+    text-decoration-color: #333;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+    color: white;
+}
+.link:hover {
+    text-decoration-color: red;
+}

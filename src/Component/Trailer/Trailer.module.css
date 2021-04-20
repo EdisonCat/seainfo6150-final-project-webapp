@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    background: #333;
+    min-height: 900px;
+    justify-content: center;
+    border-top: 1px solid gray;
+    padding: 50px;
+}
+@media screen and (max-width: 800px) {
+    iframe {
+        width: 100%;
+    }
+}

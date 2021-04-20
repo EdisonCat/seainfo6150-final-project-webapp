@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+.container {
+    display: flex;
+    background: #333;
+    color: white;
+    border-top: 1px solid gray;
+    padding: 50px 20px 50px 20px;
+    min-height: 800px;
+	font-family: 'Work Sans', sans-serif;
+}
+.thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+.thumbnail img {
+    width: 100%;
+    height: auto;
+}
+.comics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px
+}
+.link {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: #333;
+    transition: 0.5s;
+}
+.link:hover {
+    text-decoration-color: red;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 1200px){
+    .comics {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 800px){
+    .comics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .thumbnail {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 600px){
+    .comics {
+        grid-template-columns: 1fr;
+    }
+}

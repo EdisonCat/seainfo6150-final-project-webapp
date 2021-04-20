@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendered Success correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div>
+      <h1>
+        Thanks for signing up,
+         
+        user
+        !
+        <br />
+        You are now one of our
+         
+        
+         
+        account members!
+        <br />
+        You've subscribed to our notification emails for upcoming
+      </h1>
+      <button>
+        Go to home page
+      </button>
+    </div>
+  </div>
+</div>
+`;

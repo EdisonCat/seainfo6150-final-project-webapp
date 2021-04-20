@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendered Header correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="upper"
+    >
+      <label
+        class="greeting"
+      >
+        The best Marvel Fandom in the world
+      </label>
+      <img
+        alt="logo"
+        class="logo"
+        src="logo.png"
+      />
+      <div
+        class="search"
+      >
+        <form>
+          <input
+            placeholder="Type the id of the character"
+            type="text"
+            value=""
+          />
+          <button>
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+    <div
+      class="menu"
+    >
+      <img
+        alt="menu"
+        class="menubutton"
+        src="https://img.icons8.com/cotton/64/000000/menu.png"
+        width="32"
+      />
+      <a
+        class="link"
+        href="/"
+      >
+        Home
+      </a>
+      <a
+        class="link"
+        href="/characters"
+      >
+        Characters
+      </a>
+      <a
+        class="link"
+        href="/comics"
+      >
+        Comics
+      </a>
+      <a
+        class="link"
+        href="/signup"
+      >
+        Sign Up
+      </a>
+      <a
+        class="link"
+        href="/login"
+      >
+        Log In
+      </a>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Footer component correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <ul>
+      <li
+        class="link"
+      >
+        Marvel Fandom
+      </li>
+      <li>
+        made by 
+        <a
+          class="link"
+          href="https://edisonguo.tech"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Edison
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

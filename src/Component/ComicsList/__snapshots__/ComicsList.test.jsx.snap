@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendered ComicsList correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    Loading...
+    <div
+      class="cta"
+    >
+      <button>
+        Next
+      </button>
+    </div>
+  </div>
+</div>
+`;

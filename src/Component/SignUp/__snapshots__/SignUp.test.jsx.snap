@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendered SignUp correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <form>
+      <input
+        class="inputtext"
+        placeholder="E-mail"
+        type="text"
+      />
+      <input
+        class="inputtext"
+        placeholder="Username"
+        type="text"
+      />
+      <input
+        class="inputtext"
+        placeholder="Password"
+        type="password"
+      />
+      <input
+        class="inputtext"
+        placeholder="Confirm your password"
+        type="password"
+      />
+      <label
+        for="type"
+      >
+        Type of Account:
+        <select
+          id="type"
+        >
+          <option
+            value="normal"
+          >
+            Normal
+          </option>
+          <option
+            value="premium"
+          >
+            Premium
+          </option>
+          <option
+            value="gold"
+          >
+            Gold
+          </option>
+          <option
+            value="Diamond"
+          >
+            Diamond
+          </option>
+        </select>
+      </label>
+      <label
+        for="join"
+      >
+        Join an ongoing event:
+        <select
+          id="join"
+        >
+          <option
+            value=""
+          >
+            Not interested
+          </option>
+          <option
+            value="Marvel and Medicine"
+          >
+            Marvel and Medicine
+          </option>
+          <option
+            value="Marvel for Homeless"
+          >
+            Marvel for Homeless
+          </option>
+          <option
+            value="Marvel Foundation"
+          >
+            Marvel Foundation
+          </option>
+          <option
+            value="Marvel TED Talk"
+          >
+            Marvel TED Talk
+          </option>
+        </select>
+      </label>
+      <fieldset>
+        I want to subscribe to notification emails for
+        <label
+          for="events"
+        >
+          <input
+            checked=""
+            class="check"
+            id="events"
+            type="checkbox"
+          />
+          Events
+        </label>
+        <label
+          for="comics"
+        >
+          <input
+            checked=""
+            class="check"
+            id="comics"
+            type="checkbox"
+          />
+          Comics
+        </label>
+        <label
+          for="tv"
+        >
+          <input
+            checked=""
+            class="check"
+            id="tv"
+            type="checkbox"
+          />
+          TV Shows
+        </label>
+        <label
+          for="movies"
+        >
+          <input
+            checked=""
+            class="check"
+            id="movies"
+            type="checkbox"
+          />
+          Movies
+        </label>
+      </fieldset>
+      <label
+        for="check"
+      >
+        I agree to the 
+        <a
+          href="https://disneytermsofuse.com/english/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Terms of Service
+        </a>
+         and 
+        <a
+          href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Privacy Policy
+        </a>
+        .
+        <input
+          class="check"
+          id="check"
+          type="checkbox"
+        />
+      </label>
+    </form>
+    <button>
+      Sign Up
+    </button>
+  </div>
+</div>
+`;

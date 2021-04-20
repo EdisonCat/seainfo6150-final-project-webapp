@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendered CoverCard correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <img
+      alt="thumbnail"
+      class="thumbnail"
+      src=""
+    />
+    <div
+      class="title"
+    />
+  </div>
+</div>
+`;

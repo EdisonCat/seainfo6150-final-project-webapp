@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendered DetailPage correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="thumbnail"
+    >
+      <img
+        alt="thumbnail"
+        src=""
+      />
+    </div>
+    <div
+      class="info"
+    >
+      <div>
+        <h1 />
+        <br />
+        <h4>
+          Description: 
+          
+        </h4>
+      </div>
+      <h4>
+        Comics: 
+      </h4>
+      <div
+        class="comics"
+      />
+    </div>
+  </div>
+</div>
+`;

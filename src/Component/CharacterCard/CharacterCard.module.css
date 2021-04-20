@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+.container {
+	/* border: white solid 1px; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	margin: 10px;
+	padding: 20px;
+	height: 500px;
+	justify-content: space-around;
+	font-family: 'Work Sans', sans-serif;
+
+
+	border-radius: 53px;
+	background: #333333;
+	box-shadow: inset 25px 25px 50px #141414, inset -25px -25px 50px #525252;
+    transition: 0.5s;
+}
+.container:hover {
+	border-radius: 53px;
+	background: linear-gradient(145deg, #373737, #2e2e2e);
+	box-shadow: 25px 25px 50px #141414, -25px -25px 50px #525252;
+}
+.container button {
+	background: white;
+	transition: 0.5s;
+	width: 100px;
+}
+.container button:hover {
+	background: red;
+	transition: 0.5s;
+	width: 120px;
+	color: white;
+}
+.thumbnail {
+	max-width: 300px;
+	max-height: 280px;
+	width: 100%;
+	height: auto;
+}
+h1 {
+	font-size: 20px;
+}
+button {
+	width: 100px;
+	border: none;
+	border-radius: 30px;
+	padding: 5px;
+	margin: 10px;
+	transition: 0.5s;
+	cursor: pointer;
+    outline: none;
+}
+button:hover {
+	width: 120px;
+	color: white;
+	background: red;
+}
